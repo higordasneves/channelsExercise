@@ -35,4 +35,5 @@ func receive(ch chan int) {
 	}
 	sort.Ints(s)
 	fmt.Println(s, "size:", len(s))
+	fmt.Println("change on master")
 }
