@@ -35,4 +35,9 @@ func receive(ch chan int) {
 	}
 	sort.Ints(s)
 	fmt.Println(s, "size:", len(s))
+<<<<<<< Updated upstream
 }
+=======
+	fmt.Println("any")
+}
+>>>>>>> Stashed changes
