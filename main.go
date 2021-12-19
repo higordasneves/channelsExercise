@@ -33,6 +33,7 @@ func receive(ch chan int) {
 	for v := range ch {
 		s = append(s, v)
 	}
+
 	sort.Ints(s)
 	fmt.Println(s, "size:", len(s))
 }
