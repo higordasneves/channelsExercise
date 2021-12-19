@@ -37,5 +37,6 @@ func receive(ch chan int) {
 	fmt.Println(s, "size:", len(s))
 	fmt.Println("change on master")
 	fmt.Println("change on test")
+	fmt.Println("change on master2")
 	fmt.Println("change on test2")
 }
