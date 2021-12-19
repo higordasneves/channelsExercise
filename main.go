@@ -35,4 +35,6 @@ func receive(ch chan int) {
 	}
 	sort.Ints(s)
 	fmt.Println(s, "size:", len(s))
+	fmt.Println("any")
+	fmt.Println("any2")
 }
