@@ -5,6 +5,7 @@ import (
 	"sort"
 	"sync"
 )
+
 var wg sync.WaitGroup
 
 func main() {
@@ -27,11 +28,12 @@ func send(ch chan int) {
 	close(ch)
 }
 
-func receive(ch chan int){
+func receive(ch chan int) {
 	s := make([]int, 0, 100)
-	for v := range ch{
+	for v := range ch {
 		s = append(s, v)
 	}
 	sort.Ints(s)
 	fmt.Println(s, "size:", len(s))
+
 }
