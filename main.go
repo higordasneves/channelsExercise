@@ -29,6 +29,7 @@ func send(ch chan int) {
 }
 
 func receive(ch chan int) {
+	fmt.Println("a")
 	s := make([]int, 0, 100)
 	for v := range ch {
 		s = append(s, v)
